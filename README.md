@@ -4,7 +4,7 @@
     Hello! My name is Artyom! I'm seveteen.
     In 2020, I entered in the ITMO University.
     From that moment on, I decided to create a GitHub account.
-    I started lay out the educational process, which can be somehow recorded.
+    I started lay out the educational process, which can be recorded.
     I will try to keep my account regularly.
 <ul>
    Here you can find my projects:
