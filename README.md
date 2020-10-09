@@ -6,10 +6,11 @@
     From that moment on, I decided to create a GitHub account.
     I started lay out the educational process, which can be somehow recorded.
     I will try to keep my account regularly.
-   
+   <div>
    <a href = "https://vk.com/mrfadeyev"><img src = "https://free-png.ru/wp-content/uploads/2020/04/VK-chb_t-320x320.png" width = "31" align = "right" target = "_blank"></a>
-   <br>
+    <br>
    <a href = "https://t.me/not_fadyat"><img src = "https://i.pinimg.com/originals/a9/74/1a/a9741aa5ce89000ef341872d32e4ba69.png" width = "31" align = "right" target = "_blank"></a>
+   </div>
 <ul>
    Here you can find my projects:
     <li>qwe</li>
