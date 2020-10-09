@@ -6,8 +6,8 @@
     From that moment on, I decided to create a GitHub account.
     I started lay out the educational process, which can be recorded.
     I will try to keep my account regularly.
-<hr>
-    <h4 align = "center">Here you can find my projects:</h4>
+    
+<h4 align = "center">Here you can find my projects:</h4>
 <ul>
     <li><a href = "https://github.com/fadyat/ITMO-ALG"> Algorithms and Data Structures </a></li>
     <li><a href = "https://github.com/fadyat/ITMO-DC"> Digital Culture </a></li>
