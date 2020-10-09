@@ -6,13 +6,14 @@
     From that moment on, I decided to create a GitHub account.
     I started lay out the educational process, which can be recorded.
     I will try to keep my account regularly.
+<hr>
+    <h4 align = "center">Here you can find my projects:</h4>
 <ul>
-   Here you can find my projects:
-    <li>qwe</li>
-    <li>qwe</li>
-    <li>qwe</li>
-    <li>qwe</li>
-    <li>qwe</li>
+    <li><a href = "https://github.com/fadyat/ITMO-ALG"> Algorithms and Data Structures </a></li>
+    <li><a href = "https://github.com/fadyat/ITMO-DC"> Digital Culture </a></li>
+    <li><a href = "https://github.com/fadyat/ITMO-C"> Programming on C/C++ </a></li>
+    <li><a href = "https://github.com/fadyat/ITMO-ECM"> Computer Architecture </a></li>
+    <li><a href = "https://github.com/fadyat/ICPC-PROBLEMS"> ICPC Problems (Updated) </a></li>
 </ul>
 <div>
    <a href = "https://vk.com/mrfadeyev"><img src = "https://free-png.ru/wp-content/uploads/2020/04/VK-chb_t-320x320.png" width = "32" align = "right" target = "_blank"></a>
