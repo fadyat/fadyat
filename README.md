@@ -12,7 +12,8 @@
    <a href = "mailto:fadyat@icloud.com"><img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTewa5n6ScSCLaV_q218HjkRStQnXQ1PkPP4Q&usqp=CAU" width = "32" align = "right" target = "_blank"></a>
    <a href = "https://github.com/fadyat"><img src = "https://image.flaticon.com/icons/png/512/25/25231.png" width = "32" align = "right" target = "_blank"></a>
    <a href = "https://codeforces.com/profile/AwayFromHome"><img src = "https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/codeforces-512.png" width = "32" align = "right" target = "_blank"></a>
-<div><img src= "https://i.pinimg.com/originals/71/51/3a/71513ac815fbee5224723c02a1739bb0.gif" width = "240" align = "right"></div>
+    <br>
+<p><img src= "https://i.pinimg.com/originals/71/51/3a/71513ac815fbee5224723c02a1739bb0.gif" width = "240" align = "right"></p>
 </div>
 <h4 align = "center">Here you can find my projects:</h4>
 <ul>
