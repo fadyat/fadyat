@@ -10,11 +10,11 @@
 <h4 align = "center">Here you can find my projects:</h4>
 <div>
     <ul>
-        <li><a href = "https://github.com/fadyat/ITMO-ALG"> Algorithms and Data Structures </a></li>
-        <li><a href = "https://github.com/fadyat/ITMO-DC"> Digital Culture </a></li>
-        <li><a href = "https://github.com/fadyat/ITMO-C"> Programming on C/C++ </a></li>
-        <li><a href = "https://github.com/fadyat/ITMO-ECM"> Computer Architecture </a></li>
-        <li> Some interesting things in the process.
+        <li><a href = ""> Some interesting things in the process. </a></li>
+        <li><a href = ""> Some interesting things in the process. </a></li>
+        <li><a href = ""> Some interesting things in the process. </a></li>
+        <li><a href = ""> Some interesting things in the process. </a></li>
+        <li><a href = ""> Some interesting things in the process. </a></li>
             <div>
                <a href = "https://vk.com/mrfadeyev"><img src = "https://free-png.ru/wp-content/uploads/2020/04/VK-chb_t-320x320.png" width = "3.3%" align = "right" target = "_blank"></a>
                <a href = "https://t.me/not_fadyat"><img src = "https://i.pinimg.com/originals/a9/74/1a/a9741aa5ce89000ef341872d32e4ba69.png" width = "3.3%" align = "right" target = "_blank"></a>
