@@ -10,11 +10,11 @@
 <h4 align = "center">Here you can find my projects:</h4>
 <div>
     <ul>
-        <li><a href = ""> Some interesting things in the process. </a></li>
-        <li><a href = ""> Some interesting things in the process. </a></li>
-        <li><a href = ""> Some interesting things in the process. </a></li>
-        <li><a href = ""> Some interesting things in the process. </a></li>
-        <li><a href = ""> Some interesting things in the process. </a></li>
+        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS"> Repository with all subjects </a></li>
+        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Algorithms"> Algoritms and Data Structures </a></li>
+        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Digital-culture"> Digital Culture </a></li>
+        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Programming"> Programming </a></li>
+        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Linal"> Linear Algebra </a></li>
             <div>
                <a href = "https://vk.com/mrfadeyev"><img src = "https://free-png.ru/wp-content/uploads/2020/04/VK-chb_t-320x320.png" width = "3.3%" align = "right" target = "_blank"></a>
                <a href = "https://t.me/not_fadyat"><img src = "https://i.pinimg.com/originals/a9/74/1a/a9741aa5ce89000ef341872d32e4ba69.png" width = "3.3%" align = "right" target = "_blank"></a>
