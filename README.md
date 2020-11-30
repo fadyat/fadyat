@@ -10,7 +10,7 @@
 <h4 align = "center">Here you can find my projects:</h4>
 <div>
     <ul>
-        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS"> Repository with all subjects (Now I closed it) </a></li>
+        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS"> Repository with all subjects </a><b>(Now I closed it)</b></li>
         <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Algorithms"> Algoritms and Data Structures </a></li>
         <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Digital-culture"> Digital Culture </a></li>
         <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Programming"> Programming </a></li>
