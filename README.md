@@ -19,7 +19,7 @@
                <a href = "https://vk.com/mrfadeyev"><img src = "https://free-png.ru/wp-content/uploads/2020/04/VK-chb_t-320x320.png" width = "3.3%" align = "right" target = "_blank"></a>
                <a href = "https://t.me/not_fadyat"><img src = "https://i.pinimg.com/originals/a9/74/1a/a9741aa5ce89000ef341872d32e4ba69.png" width = "3.3%" align = "right" target = "_blank"></a>
                <a href = "mailto:fadyat@icloud.com"><img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTewa5n6ScSCLaV_q218HjkRStQnXQ1PkPP4Q&usqp=CAU" width = "3.3%" align = "right" target = "_blank"></a>
-               <a href = "https://github.com/fadyat"><img src = "https://image.flaticon.com/icons/png/512/25/25231.png" width = "3.3%" align = "right" target = "_blank"></a>
+               <a href = "https://github.com/fadyat"><img src = "/git.png" width = "3.3%" align = "right" target = "_blank"></a>
                  <a href = "https://discord.gg/c6PBVGk"><img src = "https://i.pinimg.com/originals/28/23/f8/2823f83d9bc5e4f1a38b71963beb6932.png" width = "3.3%" align = "right" target = "_blank"></a>
             </div></a>
         </li>
