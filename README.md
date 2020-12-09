@@ -18,8 +18,9 @@
             <div>
                <a href = "https://vk.com/mrfadeyev"><img src = "pictures/vk.png" width = "3.3%" align = "right" target = "_blank"></a>
                <a href = "https://t.me/not_fadyat"><img src = "pictures/teleg.png" width = "3.3%" align = "right" target = "_blank"></a>
+               <a href = "mailto:fadyat@icloud.com"><img src = "pictures/email.png" width = "3.3%" align = "right" target = "_blank"></a>
                <a href = "https://github.com/fadyat"><img src = "pictures/git.png" width = "3.3%" align = "right" target = "_blank"></a>
-                 <a href = "https://discord.gg/c6PBVGk"><img src = "pictures/disc.png" width = "3.3%" align = "right" target = "_blank"></a>
+               <a href = "https://discord.gg/c6PBVGk"><img src = "pictures/disc.png" width = "3.3%" align = "right" target = "_blank"></a>
             </div></a>
         </li>
     </ul>
