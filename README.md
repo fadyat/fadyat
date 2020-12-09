@@ -18,7 +18,7 @@
             <div>
                <a href = "https://vk.com/mrfadeyev"><img src = "https://free-png.ru/wp-content/uploads/2020/04/VK-chb_t-320x320.png" width = "3.3%" align = "right" target = "_blank"></a>
                <a href = "https://t.me/not_fadyat"><img src = "https://i.pinimg.com/originals/a9/74/1a/a9741aa5ce89000ef341872d32e4ba69.png" width = "3.3%" align = "right" target = "_blank"></a>
-               <a href = "mailto:fadyat@icloud.com"><img src = "mail.png" width = "3.3%" align = "right" target = "_blank"></a>
+               <a href = "mailto:fadyat@icloud.com"><img src = "/mail.png" width = "3.3%" align = "right" target = "_blank"></a>
                <a href = "https://github.com/fadyat"><img src = "/git.png" width = "3.3%" align = "right" target = "_blank"></a>
                  <a href = "https://discord.gg/c6PBVGk"><img src = "https://i.pinimg.com/originals/28/23/f8/2823f83d9bc5e4f1a38b71963beb6932.png" width = "3.3%" align = "right" target = "_blank"></a>
             </div></a>
