@@ -1,7 +1,7 @@
 <h2 align = "center" >What are you doing here?</h2>
 <p><img src= "pictures/hello.gif" width = "25%" align = "right"></p>
 
-    Hello! My name is Artyom! I'm seveteen.
+    Hello! My name is Artyom! I'm eighteen.
     I entered ITMO University in 2020.
     From that moment on, I decided to create a GitHub account.
     I started lay out the educational process, which can be recorded.
