@@ -6,6 +6,7 @@
     From that moment on, I decided to create a GitHub account.
     I started lay out the educational process, which can be recorded.
     I will try to keep my account regularly.
+    Happy NY 2021!
     
 <h4 align = "center">Here you can find my projects:</h4>
 <div>
