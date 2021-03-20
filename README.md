@@ -1,5 +1,5 @@
 <h2 align = "center" >What are you doing here?</h2>
-<p><img src= "https://cdn.betterttv.net/emote/5b8a9c6f80c14b0422a7b2a0/3x" width = "25%" align = "right"></p>
+<p><img src= "https://cdn.betterttv.net/emote/5e9643a2d023b362f6381be1/3x" width = "25%" align = "right"></p>
 
     Hello! My name is Artyom! I'm eighteen.
     I entered ITMO University in 2020.
