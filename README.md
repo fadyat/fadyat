@@ -12,9 +12,9 @@
     <ul>
         <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS"> Repository with all subjects </a></li>
         <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Algorithms"> Algoritms and Data Structures </a></li>
-        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Digital-culture"> Digital Culture </a></li>
+        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Discrete-math"> Discrete-math </a></li>
         <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Programming"> Programming </a></li>
-        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Linal"> Linear Algebra </a></li>
+        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Physics"> Physics </a></li>
             <div>
 
  <div>
