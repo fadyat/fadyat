@@ -11,12 +11,13 @@
 
 <div>
     <ul>
-        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS"> Repository with all subjects </a></li>
-        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Algorithms"> Algoritms and Data Structures </a></li>
-        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Discrete-math"> Discrete-math </a></li>
-        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Programming"> Programming </a></li>
-        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Physics"> Physics </a></li>
+        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS"><s> Repository with all subjects </s></a></li>
+        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Algorithms"><s> Algoritms and Data Structures </s></a></li>
+        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Discrete-math"><s> Discrete-math </s></a></li>
+        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Programming"><s> Programming </s></a></li>
+        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Physics"><s> Physics </s></a></li>
     </ul>
+    Now it's a private repository :(
 </div>
 
 <div>
