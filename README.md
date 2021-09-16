@@ -6,18 +6,19 @@
     From that moment on, I decided to create a GitHub account.
     I started lay out the educational process, which can be recorded.
     I will try to keep my account regularly.
+    IS M3202
 
 <h4 align = "center">Here you can find my projects:</h4>
 
 <div>
     <ul>
-        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS"><s> Repository with all subjects </s></a></li>
-        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Algorithms"><s> Algoritms and Data Structures </s></a></li>
-        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Discrete-math"><s> Discrete-math </s></a></li>
-        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Programming"><s> Programming </s></a></li>
-        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Physics"><s> Physics </s></a></li>
+        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS"> Repository with all subjects </a></li>
+        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/OOP"> Object Oriented Programming </a></li>
+        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/OS"> Operating Systems </a></li>
+        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Mathematical-analysis"> Mathematical-analysis </a></li>
+        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Physics"> Physics </a></li>
     </ul>
-    Now it's a private repository :(
+    ITMO-PROBLEMS - private repository. Write me in tg if u want access B)
 </div>
 
 <div>
