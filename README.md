@@ -8,22 +8,16 @@
     I will try to keep my account regularly.
     IS M3202
 
-<h4 align = "center">Here you can find my projects:</h4>
+<h4 align = "center">Here you can find my ITMO:</h4>
 <div>
     <ul>
-        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS"> Repository with all subjects </a>
+        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS"> A private repository that is updated </a>
         </li>
-        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/OOP"> Object Oriented Programming </a>
+        <li><a href = "https://github.com/fadyat/ITMO-PUBLIC"> The latest public version of the private repository </a>
             <a href="https://t.me/not_fadyat">
                 <img src= "https://komarev.com/ghpvc/?username=fadyat" width="13.90%" align = "right">
                 <img src= "https://img.shields.io/badge/-Telegram-0088cc?logo=telegram&link=https://t.me/not_fadyat" width="11%" align = "right">
             </a>
-        </li>
-        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/OS"> Operating Systems </a>
-        </li>
-        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Mathematical-analysis"> Mathematical-analysis </a>
-        </li>
-        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Physics"> Physics </a>
         </li>
     </ul>
 </div>
