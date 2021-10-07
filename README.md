@@ -1,5 +1,5 @@
 <h2 align = "center" >What are you doing here?</h2>
-<p><img src= "pictures/hello.gif" width = "25%" align = "right"></p>
+<p><img src= "https://media2.giphy.com/media/4QZK21zlzVIyc/giphy.gif?cid=ecf05e47umveldb5pm9d5huwnk3tjdk40yucfcef3bq110pa&rid=giphy.gif&ct=s" width = "25%" align = "right"></p>
 
     Hello! My name is Artyom! I'm eighteen.
     I entered ITMO University in 2020.
@@ -9,22 +9,22 @@
     IS M3202
 
 <h4 align = "center">Here you can find my projects:</h4>
-
 <div>
     <ul>
-        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS"> Repository with all subjects </a></li>
-        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/OOP"> Object Oriented Programming </a></li>
-        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/OS"> Operating Systems </a></li>
-        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Mathematical-analysis"> Mathematical-analysis </a></li>
-        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Physics"> Physics </a></li>
+        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS"> Repository with all subjects </a>
+        </li>
+        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/OOP"> Object Oriented Programming </a>
+            <a href="https://t.me/not_fadyat">
+                <img src= "https://komarev.com/ghpvc/?username=fadyat" width="13.90%" align = "right">
+                <img src= "https://img.shields.io/badge/-Telegram-0088cc?logo=telegram&link=https://t.me/not_fadyat" width="11%" align = "right">
+            </a>
+        </li>
+        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/OS"> Operating Systems </a>
+        </li>
+        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Mathematical-analysis"> Mathematical-analysis </a>
+        </li>
+        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Physics"> Physics </a>
+        </li>
     </ul>
-    ITMO-PROBLEMS - private repository. Write me in tg if u want access B)
 </div>
-
-<div>
-    <a href = "https://vk.com/mrfadeyev"><img src = "pictures/vk.png" width = "3.3%" align = "right" target = "_blank"></a>
-    <a href = "https://t.me/not_fadyat"><img src = "pictures/teleg.png" width = "3.3%" align = "right" target = "_blank"></a>
-    <a href = "mailto:fadyat@icloud.com"><img src = "pictures/email.png" width = "3.3%" align = "right" target = "_blank"></a>
-    <a href = "https://github.com/fadyat"><img src = "pictures/git.png" width = "3.3%" align = "right" target = "_blank"></a>
-    <a href = "https://discord.gg/c6PBVGk"><img src = "pictures/disc.png" width = "3.3%" align = "right" target = "_blank"></a>
-</div>
+<br>
