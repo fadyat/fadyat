@@ -14,11 +14,12 @@
         <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS"> A private repository that is updated </a>
         </li>
         <li><a href = "https://github.com/fadyat/ITMO-PUBLIC"> The latest public version of the private repository </a>
-            <a href="https://t.me/not_fadyat">
-                <img src= "https://komarev.com/ghpvc/?username=fadyat" width="13.90%" align = "right">
-                <img src= "https://img.shields.io/badge/-Telegram-0088cc?logo=telegram&link=https://t.me/not_fadyat" width="11%" align = "right">
-            </a>
+            <img src= "https://komarev.com/ghpvc/?username=fadyat" width="15%" align = "right">
         </li>
+        <br>
+        <a href="https://t.me/not_fadyat">
+         <img src= "https://img.shields.io/badge/-Telegram-0088cc?logo=telegram&link=https://t.me/not_fadyat" width="11%" align = "right">
+        </a>
     </ul>
 </div>
 <br>
