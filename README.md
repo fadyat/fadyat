@@ -7,6 +7,7 @@
     I started lay out the educational process, which can be recorded.
     I will try to keep my account regularly.
     IS M3202
+    I love Physics =)
 
 <h4 align = "center">Here you can find my ITMO:</h4>
 <div>
