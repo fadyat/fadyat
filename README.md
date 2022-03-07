@@ -17,7 +17,7 @@
         </li>
         <br>
         <a href="https://t.me/not_fadyat">
-         <img src= "https://img.shields.io/badge/-Telegram-0088cc?logo=telegram&link=https://t.me/not_fadyat" width="11%" align = "right">
+         <img src= "pictures/teleg.png" width="5%" align = "right">
         </a>
     </ul>
 </div>
