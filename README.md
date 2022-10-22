@@ -1,5 +1,5 @@
 <h2 align = "center" >What are you doing here?</h2>
-<p><img src= "https://media2.giphy.com/media/4QZK21zlzVIyc/giphy.gif?cid=ecf05e47umveldb5pm9d5huwnk3tjdk40yucfcef3bq110pa&rid=giphy.gif&ct=s" width = "25%" align = "right"></p>
+<p><img src= "https://gist.githubusercontent.com/GeekTree0101/05d338bb59109fc71871711c6fa49377/raw/3ff868ffcf2f84d419c392667335fe7e9f1bf155/dancing-gopher.gif" width = "20%" align = "right"></p>
 
     Hello! My name is Artyom!
     I entered ITMO University in 2020.
