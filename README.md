@@ -7,14 +7,11 @@
     I started lay out the educational process, which can be recorded.
     I will try to keep my account regularly.
 
-<h4 align = "center">Here you can find my ITMO:</h4>
 <div>
     <ul>
-        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS"> Repository containing all content
-        <br>
-        <a href="https://t.me/not_fadyat">
-         <img src= "pictures/teleg.png" width="5%" align = "right">
-        </a>
+        <li><a href="https://github.com/fadyat/ITMO-PROBLEMS"> Repository containing all content</li>
+        <li><a href="https://t.me/not_fadyat">Telegram</a>
     </ul>
 </div>
+<img src= "https://komarev.com/ghpvc/?username=fadyat" width="15%" align = "right">
 <br>
