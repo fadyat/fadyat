@@ -10,11 +10,7 @@
 <h4 align = "center">Here you can find my ITMO:</h4>
 <div>
     <ul>
-        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS"> A private repository that is updated </a>
-        </li>
-        <li><a href = "https://github.com/fadyat/ITMO-PUBLIC"> The latest public version of the private repository </a>
-            <img src= "https://komarev.com/ghpvc/?username=fadyat" width="15%" align = "right">
-        </li>
+        <li><a href = "https://github.com/fadyat/ITMO-PROBLEMS"> Repository containing all content
         <br>
         <a href="https://t.me/not_fadyat">
          <img src= "pictures/teleg.png" width="5%" align = "right">
