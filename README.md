@@ -9,7 +9,7 @@
 
 <div>
     <ul>
-        <li><a href="https://github.com/fadyat/ITMO-PROBLEMS"> Repository containing all content</li>
+        <li><a href="https://github.com/fadyat/ITMO-PROBLEMS"> Repository containing all content</a></li>
         <li><a href="https://t.me/not_fadyat">Telegram</a>
     </ul>
 </div>
