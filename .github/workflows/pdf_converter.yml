@@ -19,8 +19,19 @@ jobs:
         with:
           root_file: cv.tex
           args: -interaction=nonstopmode -file-line-error -pdf
-      - name: Upload pdf
-        uses: actions/upload-artifact@v2
+          continue_on_error: true
+        continue-on-error: true
+      - name: Check pdf files
+        run: |
+          file cv.pdf
+      - name: Commit pdf files
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          name: pdf
-          path: cv.pdf
+          commit_message: "feat: updated cv.pdf"
+          commit_options: "--no-verify"
+          commit_user_name: "GitHub Action"
+          commit_user_email: "action@github.com"
+          branch: ${{ github.head_ref }}
+          file_pattern: cv.pdf
+          repository: .
+          skip_empty_commit: true
