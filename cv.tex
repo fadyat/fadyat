@@ -1,0 +1,219 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{makecell}
+\usepackage[link=off]{phonenumbers}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\usepackage[margin=0.3in]{geometry}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.0in}
+\addtolength{\evensidemargin}{-0.0in}
+\addtolength{\textwidth}{0in}
+\addtolength{\topmargin}{20pt}
+\addtolength{\textheight}{0.0in}
+
+\urlstyle{same}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue!50!red,
+    linkbordercolor=red,
+    urlcolor=blue!70!black
+}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\def \ifempty#1{\def\temp{#1} \ifx\temp\empty }
+
+\newcommand{\resumeItem}[2]{
+    \item\small{
+        \ifempty{#1}#2\else\textbf{#1}{: #2 \vspace{-2pt}}\fi
+    }
+}
+
+\usepackage[dvipsnames]{xcolor}
+\definecolor{mygray}{gray}{0}
+\usepackage{fancybox}
+
+\usepackage{lmodern}
+\usepackage{tikz}
+
+% Style definition
+\tikzset{rndblock/.style={rounded corners,rectangle,draw,outer sep=0pt}}
+
+% Command Definition
+% 1 optional to customize the aspect, 2 mandatory: text to be framed
+\newcommand{\tframed}[2][]{\tikz[baseline=(h.base)]\node[rndblock,#1] (h) {\color{black}{#2}};}
+
+\newcommand*{\mystrut}{\rule[-0.2\baselineskip]{0pt}{0.8\baselineskip}}
+\newcommand{\skill}[1]{\tframed[lightgray]{\mystrut#1}}
+
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \textbf{#1}       & \textcolor{mygray}{#2}                 \\
+        \textit{\small#3} & \textcolor{mygray}{\textit{\small #4}} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeExpSubheading}[5]{
+    \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \textbf{#1}       & \textcolor{mygray}{#2}                 \\
+        \textit{\small#3} & \textcolor{mygray}{\textit{\small #4}} \\
+        {\scriptsize#5}
+    \end{tabular*}\vspace{4pt}
+}
+
+\newcommand{\resumeProjSubheading}[4]{
+    \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \textbf{#1}      & \textcolor{mygray}{#2}                 \\
+        \scriptsize {#3} & \textcolor{mygray}{\textit{\small #4}} \\
+    \end{tabular*}\vspace{4pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\usepackage{changepage}
+\newcommand{\resumeDesc}[1]{\begin{adjustwidth}{5pt}{0pt}\vspace{-2pt}{\small{#1}}\end{adjustwidth}}
+
+
+\begin{document}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{\Large Artyom Fadeyev} & Email : \href{mailto:fadyat@icloud.com}{fadyat@icloud.com} \\
+Github: \href{https://github.com/fadyat}{fadyat} & Mobile : +7\hspace{0.5ex}921\hspace{0.5ex}060\hspace{0.5ex}05\hspace{0.5ex}05 \\
+\end{tabular*}
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{National Research University ITMO}
+{Saint-Petersburg, Russia}
+{Information systems and technologies}
+{Sept. 2020 - Aug. 2024 (Present)}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeExpSubheading
+{\href{https://www.playrix.com/en/}{Playrix}}{Vologda, Russia(remote)}
+{SWE Intern, Automation Team}{July 2022 - Sept. 2022}
+{\skill{Python} \skill{SQL} \skill{Nomad} \skill{AWS}}
+\resumeDesc{
+\begin{itemize}
+\item Implemented a service that records the birthdays and length of service of employees.
+Used a scheduler and delayed the execution of the task for several days before the event, followed by notifications in Slack and Asana.
+\item Learned to write asynchronous code and understood AWS queues, for example, Kinesis.
+\item Deployed services using Docker and Nomad orchestrator with storing secrets in Vault and configurations in Consul.
+\end{itemize}}
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjSubheading
+{\href{https://github.com/fadyat/cloud}{Cloud programming with Go}}{}
+{\skill{Go} \skill{MongoDB} \skill{Docker}}{Oct. 2022 - Present}
+\resumeDesc{Covered the software architectural patterns of cloud applications,
+as well as practical concepts regarding how to scale, distribute, and deploy those applications.}
+
+\resumeProjSubheading
+{\href{https://github.com/fadyat/asana-tools}{Asana tools}}{}
+{\skill{Python} \skill{ReactJS} \skill{OAuth2} \skill{Docker}}{September 2022}
+\resumeDesc{A service that will help you automate the work with tasks in Asana.
+Allows you to create a task based on the submitted template, and also allows you to create a report
+that allows you to set approvals and rejections for contractor tasks for
+the certain period of work.}
+
+
+\resumeProjSubheading
+{\href{https://github.com/ITMO-TECH-TEAM-3/TEAM-3-1}{Sports events}}{}
+{\skill{Java} \skill{Spring} \skill{Python} \skill{Freemarker}}{May 2022}
+\resumeDesc{Learned the Java and Spring framework. Implemented all the basic structure and internal code logic
+(endpoints, authorization, deployment) of a service that can serve users, collaborated with 3 teams of 3 students each.
+\\ Partly played the role of team leader. Constantly created new tasks and discussed them with the team.}
+
+\resumeProjSubheading
+{\href{https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Programming-Technologies/IV\%20semester}{Code fixer and analyzer}}{}
+{\skill{C\#} \skill{Roslyn} \skill{LINQ}}{March 2022}
+\resumeDesc{
+The analyzer finds the if statement and displays a warning that you can invert it. Upon acceptance, the code fixer
+inverts the operator. There is also the detection of private fields that are used as local.
+It was developed using Roslyn analyzer and abstract syntax tree parsing.
+}
+
+\resumeSubHeadingListEnd
+
+\section{Achievements}
+\resumeSubHeadingListStart
+\resumeProjSubheading
+{{GitHub Hacktoberfest}}{}
+{\skill{Opensource}}
+{Oct. 2021}
+\resumeDesc{Contributed to an open source in time of the Hacktoberfest event and take a prize.
+}
+\resumeProjSubheading
+{{Phystech olympiad of mathematics}}{}
+{\skill{Mathematics}}
+{Febr. 2020}
+\resumeDesc{Prize-Winner of the All-Russian Olympiad, organized by the MIPT, which allows you to enter a university without exams
+}
+
+\resumeProjSubheading
+{{Russian National Olympiad in Informatics}}{}
+{\skill{C++} \skill{Competitive programming}}
+{Jan. 2020}
+\resumeDesc{Became the prize winner of the regional stage, in 3 months without
+knowledge of programming languages and algorithms}
+
+\resumeSubHeadingListEnd
+
+\section{Programming Skills}
+\resumeSubHeadingListStart
+\item{
+\textbf{Languages}{: Go, Python, JavaScript }
+}\vspace{-7pt}
+\item{
+\textbf{Technologies}{: SQL, Git, Docker, Bash }
+}
+\vspace{-7pt}
+\item{
+\textbf{Knowledge}{: Algorithms, Data Structures, Operating Systems, Databases, Concurrency (in progress)}
+}
+\resumeSubHeadingListEnd
+
+\end{document}
