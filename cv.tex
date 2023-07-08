@@ -3,6 +3,7 @@
 \usepackage{makecell}
 \usepackage[link=off]{phonenumbers}
 
+\usepackage{fontawesome5}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -116,10 +117,28 @@
 
 \begin{document}
 
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-\textbf{\Large Artyom Fadeyev} & Email : \href{mailto:fadyat@icloud.com}{fadyat@icloud.com} \\
-Github: \href{https://github.com/fadyat}{fadyat} & Mobile : +7\hspace{0.5ex}921\hspace{0.5ex}060\hspace{0.5ex}05\hspace{0.5ex}05 \\
-\end{tabular*}
+\vfill\noindent
+\begin{tabular}[t]{@{
+\vspace{0.5ex}
+}left}
+\textbf{\Large Artyom Fadeyev} \\
+\address{
++7\hspace{0.5ex}921\hspace{0.5ex}060\hspace{0.5ex}05\hspace{0.5ex}05 $\cdot$ Saint-Petersburg, Russia
+}
+\end{tabular}
+\hfill % move it to the right
+\begin{tabular}[t]{@{
+\vspace{0.5ex}
+}center}
+\href{mailto:fadyat@icloud.com}{\color{black} fadyat@icloud.com} \\
+
+\href{https://github.com/fadyat}{\color{black} \faGithub}
+
+\href{https://www.linkedin.com/in/artyom-fadeyev-283738235/}{\color{black} \faLinkedin}
+
+\href{https://t.me/not_fadyat}{\color{black} \faTelegram}
+\end{tabular}
+
 
 \section{Education}
 \resumeSubHeadingListStart
@@ -198,24 +217,33 @@ the certain period of work.}
 \resumeSubHeadingListStart
 
 \resumeProjSubheading
-{{VK Education, Advanced Python}}{}
-{\skill{Python}}
+{{\href{https://yandex.ru/yaintern/schools/summer}{Yandex School of Backend Development}}}{}
+{\skill{Go} \skill{SQL} \skill{gRPC}}
+{June - Aug 2023}
+\resumeDesc{
+Learned core concepts how to write a full-fledged backend on Go. \\
+Unit and integration testing, working with SQL and NoSQL databases, how to write concurrent code, and more.
+}
+
+\resumeProjSubheading
+{{\href{https://education.vk.company/students}{VK Advanced Python}}}{}
+{\skill{Python} \skill{C}}
 {March - May 2023}
 \resumeDesc{Deep dive into Python. Learned how to write asynchronous code, C extensions, metaclasses, and more.}
 
 \resumeProjSubheading
-{{GitHub Hacktoberfest}}{}
-{\skill{Opensource}}
+{{\href{https://github.com/Hacktoberfest}{GitHub Hacktoberfest}}}{}
+{\skill{Opensource} \skill{Git}}
 {Oct. 2021}
 \resumeDesc{Contributed to an open source in time of the Hacktoberfest event and take a prize.
 }
 
-\resumeProjSubheading
-{{Phystech olympiad of mathematics}}{}
-{\skill{Mathematics}}
-{Febr. 2020}
-\resumeDesc{Prize-Winner of the All-Russian Olympiad, organized by the MIPT, which allows you to enter a university without exams
-}
+%\resumeProjSubheading
+%{{Phystech olympiad of mathematics}}{}
+%{\skill{Mathematics}}
+%{Febr. 2020}
+%\resumeDesc{Prize-Winner of the All-Russian Olympiad, organized by the MIPT, which allows you to enter a university without exams
+%}
 
 %\resumeProjSubheading
 %{{Russian National Olympiad in Informatics}}{}
@@ -236,7 +264,7 @@ the certain period of work.}
 }
 \vspace{-7pt}
 \item{
-\textbf{Knowledge}{: Algorithms, Data Structures, Operating Systems, Databases, Concurrency }
+\textbf{Knowledge}{: Algorithms, Data Structures, Operating Systems, Databases, Concurrency, Distributed Systems }
 }
 \resumeSubHeadingListEnd
 
