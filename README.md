@@ -1,17 +1,25 @@
-<h2 align = "center" >What are you doing here?</h2>
-<p><img src= "https://gist.githubusercontent.com/GeekTree0101/05d338bb59109fc71871711c6fa49377/raw/3ff868ffcf2f84d419c392667335fe7e9f1bf155/dancing-gopher.gif" width = "20%" align = "right"></p>
+<h3 align="center"> You haven't been in street racing for a long time... </h3>
 
-    Hello! My name is Artyom!
-    I entered ITMO University in 2020.
-    From that moment on, I decided to create a GitHub account.
-    I started lay out the educational process, which can be recorded.
-    I will try to keep my account regularly.
+<div align="center">
+    <p><img src="./pictures/rust.png" width="50%"/></p>
 
-<div>
-    <ul>
-        <li><a href="https://github.com/fadyat/ITMO-PROBLEMS"> Repository containing all content</a></li>
-        <li><a href="https://t.me/not_fadyat">Telegram</a>
-    </ul>
+[//]: # (    Artyom, 20yo. ITMO University, bugs maker.)
+[//]: # (    I'm interested in distributed systems and highload.)
+[//]: # (    Currently working on Go and learning Rust.)
+
 </div>
+
+[//]: # (<div align="start" style="display: flex; justify-content: space-between; align-items: center;">)
+[//]: # (    <a href="https://t.me/not_fadyat">)
+[//]: # (        <img width="50" height="50" src="https://img.icons8.com/ios/50/telegram.png" alt="telegram"/>)
+[//]: # (    </a>)
+[//]: # (    <a href="https://www.linkedin.com/in/fadyat/">)
+[//]: # (        <img width="50" height="50" src="https://img.icons8.com/quill/50/linkedin.png" alt="linkedin"/>)
+[//]: # (    </a>)
+[//]: # (    <a href="mailto:mail@isfadyat@gmail.com">)
+[//]: # (        <img width="50" height="50" src="https://img.icons8.com/quill/50/gmail.png" alt="gmail"/>)
+[//]: # (    </a>)
+
 <img src= "https://komarev.com/ghpvc/?username=fadyat" width="15%" align = "right">
-<br>
+
+[//]: # (</div>)

@@ -34,4 +34,3 @@ jobs:
           branch: ${{ github.head_ref }}
           file_pattern: cv.pdf
           repository: .
-          skip_empty_commit: true
