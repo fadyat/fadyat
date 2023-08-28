@@ -14,9 +14,6 @@
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
 
-\usepackage{xcolor}% http://ctan.org/pkg/xcolor
-\usepackage{hyperref}% http://ctan.org/pkg/hyperref
-
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -217,25 +214,34 @@ a certain period of work.}
 
 \resumeProjSubheading
 {{\href{https://yandex.ru/yaintern/schools/summer}{Yandex School of Backend Development}}}{}
-{\skill{Go} \skill{SQL} \skill{gRPC}}
+{\skill{Go} \skill{PostgreSQL} \skill{gRPC}}
 {June - Aug 2023}
 \resumeDesc{
-Learned core concepts how to write a full-fledged backend on Go. \\
-Unit and integration testing, working with SQL and NoSQL databases, how to write concurrent code, and more.
+\begin{itemize}
+\item Collaborated in an 11-member team to develop a platform for student allocation between projects based on preferences.
+\item Led the implementation of role-based access control, ensuring secure user interactions and data integrity.
+\item Designed and executed the database architecture, optimizing data storage and retrieval processes.
+\item Played a proactive role in the end-to-end project development, contributing significantly to API development and frontend design.
+\end{itemize}
 }
 
 \resumeProjSubheading
 {{\href{https://education.vk.company/students}{VK Advanced Python}}}{}
 {\skill{Python} \skill{C}}
 {March - May 2023}
-\resumeDesc{Deep dive into Python. Learned how to write asynchronous code, C extensions, metaclasses, and more.}
-
-\resumeProjSubheading
-{{\href{https://github.com/Hacktoberfest}{GitHub Hacktoberfest}}}{}
-{\skill{Opensource} \skill{Git}}
-{Oct. 2021}
-\resumeDesc{Contributed to an open source in time of the Hacktoberfest event and take a prize.
+\resumeDesc{
+\begin{itemize}
+\item Acquired expertise in advanced Python concepts, including asynchronous programming, C extensions, and metaclasses.
+\item Developed a C extension enabling seamless integration with a C library for JSON manipulation.
+\end{itemize}
 }
+
+%\resumeProjSubheading
+%{{\href{https://github.com/Hacktoberfest}{GitHub Hacktoberfest}}}{}
+%{\skill{Opensource} \skill{Git}}
+%{Oct. 2021}
+%\resumeDesc{Contributed to an open source in time of the Hacktoberfest event and take a prize.
+%}
 
 %\resumeProjSubheading
 %{{Phystech olympiad of mathematics}}{}
