@@ -150,12 +150,12 @@
 \resumeSubHeadingListStart
 
 \resumeExpSubheading
-{\href{https://career.avito.com/}{Avito}}{Saint-Petersburg, Russia}
-{Middle Go Developer, DBaaS}{October 2023 - Present}
-{\skill{Go} \skill{k8s} \skill{Python}}
+{\href{https://career.avito.com/}{Avito}}{Remote}
+{Software Engineer, DBaaS}{October 2023 - Present}
+{\skill{Go} \skill{Kubernetes} \skill{Python} \skill{Vault}}
 \resumeDesc{
 \begin{itemize}
-\item Designed a backup verification platform to ensure backup availability and integrity.
+\item Designed a backup restore testing platform to ensure backup availability and integrity.
 \item Used basic principles of microservices, switched to the use of a Transactional Outbox pattern.
 \item Designed and implemented volume expansion mechanism for storages using the Kubernetes Controller and CSI driver.
 \end{itemize}}
@@ -163,8 +163,8 @@
 
 \resumeExpSubheading
 {\href{https://www.tinkoff.ru/career}{Tinkoff}}{Saint-Petersburg, Russia}
-{SRE Intern, DWH Ingest}{March 2023 - June 2023}
-{\skill{k8s} \skill{Gitlab CI} \skill{Grafana} \skill{Prometheus} \skill{Kafka}}
+{Site Reliability Engineer, DWH Ingest}{March 2023 - June 2023}
+{\skill{Java} \skill{Kubernetes} \skill{Gitlab CI} \skill{Grafana} \skill{Prometheus} \skill{Kafka}}
 \resumeDesc{
 \begin{itemize}
 \item Set up a project CI/CD pipeline using Gitlab CI and deploy it to a Kubernetes cluster using Helm.
@@ -176,12 +176,12 @@
 
 \resumeExpSubheading
 {\href{https://www.playrix.com/en/}{Playrix}}{Vologda, Russia}
-{SWE Intern, Automation Team}{July 2022 - Sept. 2022}
-{\skill{Python} \skill{SQL} \skill{AWS}}
+{Software Engineer, Automation Team}{July 2022 - Sept. 2022}
+{\skill{Python} \skill{AWS} \skill{Nomad} \skill{Vault} \skill{Consul}}
 \resumeDesc{
 \begin{itemize}
 \item Developed a solution for tracking employee birthdays and length of service, with delayed notifications in Slack and Asana.
-\item Learned to write asynchronous code and understood AWS queues, for example, Kinesis.
+\item Transitioned to asynchronous code and utilized AWS Kinesis for message queues.
 \item Deployed services using Docker and Nomad orchestrator with storing secrets in Vault and configurations in Consul.
 \end{itemize}}
 
@@ -213,17 +213,17 @@
 %\end{itemize}
 %}
 
-\resumeProjSubheading
-{\href{https://github.com/fadyat/hooks}{hooks}}{}
-{\skill{Go} \skill{Docker} \skill{Gitlab} \skill{Asana}}{Feb. 2023 - June 2023}
-\resumeDesc{
-\begin{itemize}
-\item Hooks streamlines workflows by integrating GitLab with Asana, automating task tracking and commits.
-\item Utilizes GitLab webhooks for real-time synchronization of tasks with the latest commits, ensuring project accuracy.
-\item Asana tasks are pinned to GitLab merge request descriptions, providing comprehensive project monitoring.
+%\resumeProjSubheading
+%{\href{https://github.com/fadyat/hooks}{hooks}}{}
+%{\skill{Go} \skill{Docker} \skill{Gitlab} \skill{Asana}}{Feb. 2023 - June 2023}
+%\resumeDesc{
+%\begin{itemize}
+%\item Hooks streamlines workflows by integrating GitLab with Asana, automating task tracking and commits.
+%\item Utilizes GitLab webhooks for real-time synchronization of tasks with the latest commits, ensuring project accuracy.
+%\item Asana tasks are pinned to GitLab merge request descriptions, providing comprehensive project monitoring.
 %\item Achieves fully automated build and publishing to the Docker registry for a smooth development process.
-\end{itemize}
-}
+%\end{itemize}
+%}
 
 %\resumeProjSubheading
 %{\href{https://github.com/fadyat/cloud}{Cloud programming with Go}}{}
@@ -263,6 +263,16 @@
 
 \section{Achievements}
 \resumeSubHeadingListStart
+
+\resumeProjSubheading
+{{\href{http://github.com/fadyat}{Opensource contributions}}}{}
+{\skill{Go} \skill{FerretDB}}
+{}
+\resumeDesc{
+\begin{itemize}
+\item Supported nested index creation in SQLite driver of \href{https://github.com/FerretDB/FerretDB/pulls?q=is:pr author:fadyat is:closed}{FerretDB}.
+\end{itemize}
+}
 
 \resumeProjSubheading
 {{\href{https://education.vk.company/students}{Mentoring on the VK course}}}{}
@@ -327,15 +337,29 @@
 \section{Programming Skills}
 \resumeSubHeadingListStart
 \item{
-\textbf{Languages}{: Go, Python, TypeScript }
+\small{
+\textbf{Languages}{: Go, Python, Kotlin }
+}
 }\vspace{-7pt}
 \item{
+\small{
 \textbf{Technologies}{: K8S, SQL, Git, Docker, Bash, PostgreSQL, MongoDB, Redis, Kafka }
+}
 }
 \vspace{-7pt}
 \item{
-\textbf{Knowledge}{: Algorithms, Data Structures, Operating Systems, Databases, Concurrency, Distributed Systems }
+\small{
+\textbf{Knowledge}{: Algorithms, Data Structures, Operating Systems, Databases, Concurrency, Distributed Systems, Linux }
 }
+}
+\vspace{-7pt}
+\item{
+\small{
+\textbf{Interests}{: Databases, Highload, Concurrency, Platforms, Distributed Systems }
+}
+}
+
+
 \resumeSubHeadingListEnd
 
 \end{document}
