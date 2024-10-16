@@ -48,13 +48,16 @@
 
 %-------------------------
 % Custom commands
-\def \ifempty#1{\def\temp{#1} \ifx\temp\empty }
+\def \ifempty#1{\def\temp{#1} \ifx
+                                  \temp\empty }
 
 \newcommand{\resumeItem}[2]{
-    \item\small{
-        \ifempty{#1}#2\else\textbf{#1}{: #2 \vspace{-2pt}}\fi
-    }
+\item\small{
+\ifempty{#1}#2\else\textbf{#1}{: #2 \vspace{-2pt}}\fi
 }
+}
+
+\newcommand{\plus}{\raisebox{.4\height}{\scalebox{.6}{+}}}
 
 \usepackage[dvipsnames]{xcolor}
 \definecolor{mygray}{gray}{0}
@@ -75,28 +78,28 @@
 
 
 \newcommand{\resumeSubheading}[4]{
-    \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-        \textbf{#1}       & \textcolor{mygray}{#2}                 \\
-        \textit{\small#3} & \textcolor{mygray}{\textit{\small #4}} \\
-    \end{tabular*}\vspace{-5pt}
+\vspace{-1pt}\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{#1}       & \textcolor{mygray}{#2}                 \\
+\textit{\small#3} & \textcolor{mygray}{\textit{\small #4}} \\
+\end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeExpSubheading}[5]{
-    \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-        \textbf{#1}       & \textcolor{mygray}{#2}                 \\
-        \textit{\small#3} & \textcolor{mygray}{\textit{\small #4}} \\
-        {\scriptsize#5}
-    \end{tabular*}\vspace{4pt}
+\vspace{-1pt}\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{#1}       & \textcolor{mygray}{#2}                 \\
+\textit{\small#3} & \textcolor{mygray}{\textit{\small #4}} \\
+{\scriptsize#5}
+\end{tabular*}\vspace{4pt}
 }
 
 \newcommand{\resumeProjSubheading}[4]{
-    \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-        \textbf{#1}      & \textcolor{mygray}{#2}                 \\
-        \scriptsize {#3} & \textcolor{mygray}{\textit{\small #4}} \\
-    \end{tabular*}\vspace{4pt}
+\vspace{-1pt}\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{#1}      & \textcolor{mygray}{#2}                 \\
+\scriptsize {#3} & \textcolor{mygray}{\textit{\small #4}} \\
+\end{tabular*}\vspace{4pt}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
@@ -118,15 +121,14 @@
 \begin{tabular}[t]{@{
 \vspace{0.5ex}
 }left}
+
 \textbf{\large{Artyom Fadeyev}} \\
-\address{
-+7\hspace{0.5ex}921\hspace{0.5ex}060\hspace{0.5ex}05\hspace{0.5ex}05 $\cdot$ Saint-Petersburg, Russia
-}
+\href{tel:+79210600505}{\color{black} \plus7 921 060 05 05}
+$\cdot$ Saint-Petersburg, Russia
+
 \end{tabular}
 \hfill % move it to the right
-\begin{tabular}[t]{@{
-\vspace{0.5ex}
-}center}
+\begin{tabular}[t]{@{}r@{}}
 \href{mailto:fadyat@icloud.com}{\color{black} fadyat@icloud.com} \\
 
 \href{https://github.com/fadyat}{\color{black} \faGithub}
@@ -135,19 +137,12 @@
 
 \href{https://t.me/not_fadyat}{\color{black} \faTelegram}
 \end{tabular}
-
-
-\section{Education}
-\resumeSubHeadingListStart
-\resumeSubheading
-{National Research University ITMO}
-{Saint-Petersburg, Russia}
-{Software Engineering}
-{Sept. 2020 - Aug. 2024 (Present)}
-\resumeSubHeadingListEnd
+\vspace{1ex}
 
 \section{Experience}
 \resumeSubHeadingListStart
+
+%% todo: more numbers, description
 
 \resumeExpSubheading
 {\href{https://career.avito.com/}{Avito}}{Remote}
@@ -155,11 +150,11 @@
 {\skill{Go} \skill{Kubernetes} \skill{Python} \skill{Vault}}
 \resumeDesc{
 \begin{itemize}
-\item Designed a backup restore testing platform to ensure backup availability and integrity.
-\item Used basic principles of microservices, switched to the use of a Transactional Outbox pattern.
-\item Designed and implemented volume expansion mechanism for storages using the Kubernetes Controller and CSI driver.
+\item Led the development of a backup verification platform that verifies all backups across the entire company, ensuring the integrity of 10k\plus \space backups daily across multiple storage systems.
+\item Implemented a volume expansion mechanism using the Kubernetes Controller and CSI driver, reducing expansion time by 90\% and significantly enhancing system reliability.
+\item Optimized architecture by adopting multiple microservices-related patterns, improving system-wide consistency and fault tolerance.
+\item Onboarded new engineers and conducted training sessions on the project's architecture and core technologies of the team.
 \end{itemize}}
-
 
 \resumeExpSubheading
 {\href{https://www.tinkoff.ru/career}{Tinkoff}}{Saint-Petersburg, Russia}
@@ -173,17 +168,32 @@
 \item Jointly implemented transferring a Kafka topic from one cluster to another using the Java and Schema Registry.
 \end{itemize}}
 
-
 \resumeExpSubheading
 {\href{https://www.playrix.com/en/}{Playrix}}{Vologda, Russia}
 {Software Engineer, Automation Team}{July 2022 - Sept. 2022}
 {\skill{Python} \skill{AWS} \skill{Nomad} \skill{Vault} \skill{Consul}}
 \resumeDesc{
 \begin{itemize}
-\item Developed a solution for tracking employee birthdays and length of service, with delayed notifications in Slack and Asana.
-\item Transitioned to asynchronous code and utilized AWS Kinesis for message queues.
+\item Developed a solution for tracking employee birthdays and length of service for 4k\plus \space employees, with delayed notifications.
+\item Led the transition from a monolithic to a microservices architecture, introducing asynchronous code and utilizing AWS Kinesis.
 \item Deployed services using Docker and Nomad orchestrator with storing secrets in Vault and configurations in Consul.
 \end{itemize}}
+
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{\href{https://mhs.itmo.ru/}{{ITMO University}}}
+{Remote}
+{Master's degree, Highload Systems Software}
+{Sept. 2024 - Present}
+
+\resumeSubheading
+{\href{https://en.itmo.ru/}{{ITMO University}}}
+{Saint-Petersburg, Russia}
+{Bachelor's degree, Software Engineering}
+{Sept. 2020 - July 2024}
 
 \resumeSubHeadingListEnd
 
@@ -242,7 +252,6 @@
 %a certain period of work.
 %}
 
-
 %\resumeProjSubheading
 %{\href{https://github.com/ITMO-TECH-TEAM-3/TEAM-3-1}{Sports events}}{}
 %{\skill{Java} \skill{Spring} \skill{Python} \skill{Freemarker}}{May 2022}
@@ -265,27 +274,15 @@
 \resumeSubHeadingListStart
 
 \resumeProjSubheading
-{{\href{http://github.com/fadyat}{Opensource contributions}}}{}
-{\skill{Go} \skill{FerretDB}}
-{}
-\resumeDesc{
-\begin{itemize}
-\item Supported nested index creation in SQLite driver of \href{https://github.com/FerretDB/FerretDB/pulls?q=is:pr author:fadyat is:closed}{FerretDB}.
-\end{itemize}
-}
-
-\resumeProjSubheading
-{{\href{https://education.vk.company/students}{Mentoring on the VK course}}}{}
-{\skill{Go} \skill{Code review} \skill{Mentoring}}
+{{\href{http://github.com/fadyat}{Community Contributions}}}{}
+{\skill{FerretDB} \skill{Mentoring}}
 {Sept. 2023 - Present}
 \resumeDesc{
 \begin{itemize}
-\item Mentored a group of students, providing guidance on the course and helping them with their projects.
-\item Reviewed and provided feedback on the students code, ensuring code quality and adherence to best practices.
-\item Assisted students in team collaboration, helping them to resolve conflicts and improve their teamwork.
+\item Enhanced \href{https://github.com/FerretDB/FerretDB/pulls?q=is:pr+author:fadyat+is:closed}{FerretDB} by implementing nested index creation in the SQLite driver, benefiting thousands of developers.
+\item Mentored 40\plus \space students in the \href{https://education.vk.company/centrums}{VK course}, completing 200\plus \space code reviews and boosting project completion rates and code quality.
 \end{itemize}
 }
-
 
 \resumeProjSubheading
 {{\href{https://yandex.ru/yaintern/schools/summer}{Yandex School of Backend Development}}}{}
@@ -293,10 +290,8 @@
 {June 2023 - Aug 2023}
 \resumeDesc{
 \begin{itemize}
-\item Collaborated in an 11-member team to develop a platform for student allocation between projects based on preferences.
-\item Led the implementation of role-based access control, ensuring secure user interactions and data integrity.
-\item Designed and executed the database architecture, optimizing data storage and retrieval processes.
-\item Played a proactive role in the end-to-end project development, contributing significantly to API development and frontend design.
+\item Collaborated in an 11-member team to build a platform that allocated 100\plus \space students to projects based on their preferences.
+\item Led the development of RBAC for 5\plus \space user roles and optimized database architecture, improving query performance by 30\%.
 \end{itemize}
 }
 
@@ -334,28 +329,29 @@
 
 \resumeSubHeadingListEnd
 
-\section{Programming Skills}
+\section{Skills}
 \resumeSubHeadingListStart
 \item{
 \small{
-\textbf{Languages}{: Go, Python, Kotlin }
-}
-}\vspace{-7pt}
-\item{
-\small{
-\textbf{Technologies}{: K8S, SQL, Git, Docker, Bash, PostgreSQL, MongoDB, Redis, Kafka }
+\textbf{Technologies}{: Kubernetes, Docker, SQL, Linux, PostgreSQL, MongoDB, Redis, Redpanda }
 }
 }
 \vspace{-7pt}
 \item{
 \small{
-\textbf{Knowledge}{: Algorithms, Data Structures, Operating Systems, Databases, Concurrency, Distributed Systems, Linux }
+\textbf{Interests}{: Databases, Highload, Concurrency, Distributed Systems, Platforms }
 }
 }
 \vspace{-7pt}
 \item{
 \small{
-\textbf{Interests}{: Databases, Highload, Concurrency, Platforms, Distributed Systems }
+\textbf{Programming Languages}{: Go, Python, Rust }
+}
+}
+\vspace{-7pt}
+\item{
+\small{
+\textbf{Languages}{: English -- Advanced, Russian -- Native}
 }
 }
 
