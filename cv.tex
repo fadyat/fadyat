@@ -8,7 +8,7 @@
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
+\usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage[pdftex]{hyperref}
@@ -120,7 +120,7 @@
 \vfill\noindent
 \begin{tabular}[t]{@{
 \vspace{0.5ex}
-}left}
+}l}
 
 \textbf{\large{Artyom Fadeyev}} \\
 \href{tel:+79210600505}{\color{black} \plus7 921 060 05 05}
@@ -142,41 +142,55 @@ $\cdot$ Saint-Petersburg, Russia
 \section{Experience}
 \resumeSubHeadingListStart
 
-%% todo: more numbers, description
-
 \resumeExpSubheading
-{\href{https://career.avito.com/}{Avito}}{Remote}
-{Software Engineer, DBaaS}{October 2023 - Present}
-{\skill{Go} \skill{Kubernetes} \skill{Python} \skill{Vault}}
+{Avito}{Remote}
+{Software Engineer, DBaaS}
+{Oct. 2023 - Present}
+{\skill{Go} \skill{Kubernetes} \skill{S3} \skill{Python}}
 \resumeDesc{
 \begin{itemize}
-\item Led the development of a backup verification platform that verifies all backups across the entire company, ensuring the integrity of 10k\plus \space backups daily across multiple storage systems.
-\item Implemented a volume expansion mechanism using the Kubernetes Controller and CSI driver, reducing expansion time by 90\% and significantly enhancing system reliability.
-\item Optimized architecture by adopting multiple microservices-related patterns, improving system-wide consistency and fault tolerance.
-\item Onboarded new engineers and conducted training sessions on the project's architecture and core technologies of the team.
-\end{itemize}}
+    \item
+        Led the development of a backup verification platform that verifies all backups across the entire company,
+        ensuring the integrity of ${\small \sim} 10$k backups daily across multiple storage systems.
+    \item
+        Delivered isolated bucket environments for object storage, providing separate infrastructure for large teams;
+        supports projected growth of ${\small \sim} 1$k users and ${\small \sim} 80$k buckets.
+    \item
+        Engineered a verification scheduling algorithm considering database sizes, with additional optimizations,
+        delivering 2x faster verifications and 20–30\% lower Ceph load.
+    \item
+        Implemented a volume expansion mechanism using the Kubernetes Controller and CSI driver,
+        reducing expansion time by 90\% and significantly enhancing system reliability.
+
+%     % \item Optimized architecture by adopting multiple microservices-related patterns, improving system-wide consistency and fault tolerance.
+%     % \item Onboarded new engineers and conducted training sessions on the project's architecture and core technologies of the team.
+
+\end{itemize}
+}
 
 \resumeExpSubheading
-{\href{https://www.tinkoff.ru/career}{Tinkoff}}{Saint-Petersburg, Russia}
-{Site Reliability Engineer, DWH Ingest}{March 2023 - June 2023}
+{Tinkoff}{Saint-Petersburg, Russia}
+{Site Reliability Engineer - Intern, DWH Ingest}
+{March 2023 - June 2023}
 {\skill{Java} \skill{Kubernetes} \skill{Gitlab CI} \skill{Grafana} \skill{Prometheus} \skill{Kafka}}
 \resumeDesc{
 \begin{itemize}
-\item Set up a project CI/CD pipeline using Gitlab CI and deploy it to a Kubernetes cluster using Helm.
-\item Implemented Prometheus and Grafana-based alert systems to notify duty engineers about service issues promptly.
-\item Changed usage of the GitLab artifacts to the Artifactory registry with fully automated building, publishing, and deployment.
-\item Jointly implemented transferring a Kafka topic from one cluster to another using the Java and Schema Registry.
+    \item Set up a project CI/CD pipeline using Gitlab CI and deploy it to a Kubernetes cluster using Helm.
+    \item Implemented Prometheus and Grafana-based alert systems to notify duty engineers about service issues promptly.
+    \item Changed usage of the GitLab artifacts to the Artifactory registry with fully automated building, publishing, and deployment.
+    \item Jointly implemented transferring a Kafka topic from one cluster to another using the Java and Schema Registry.
 \end{itemize}}
 
 \resumeExpSubheading
-{\href{https://www.playrix.com/en/}{Playrix}}{Vologda, Russia}
-{Software Engineer, Automation Team}{July 2022 - Sept. 2022}
-{\skill{Python} \skill{AWS} \skill{Nomad} \skill{Vault} \skill{Consul}}
+{Playrix}{Vologda, Russia}
+{Software Engineer - Intern, Automation Team}
+{July 2022 - Sept. 2022}
+{\skill{Python} \skill{AWS} \skill{Vault} \skill{Consul}}
 \resumeDesc{
 \begin{itemize}
-\item Developed a solution for tracking employee birthdays and length of service for 4k\plus \space employees, with delayed notifications.
-\item Led the transition from a monolithic to a microservices architecture, introducing asynchronous code and utilizing AWS Kinesis.
-\item Deployed services using Docker and Nomad orchestrator with storing secrets in Vault and configurations in Consul.
+    \item Developed a solution for tracking employee birthdays and length of service for ${\small \sim} 4$k employees, with delayed notifications.
+    \item Led the transition from a monolithic to a microservices architecture, introducing asynchronous code and utilizing AWS Kinesis.
+    \item Deployed services using Docker and Nomad orchestrator with storing secrets in Vault and configurations in Consul.
 \end{itemize}}
 
 \resumeSubHeadingListEnd
@@ -184,32 +198,31 @@ $\cdot$ Saint-Petersburg, Russia
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheading
-{\href{https://mhs.itmo.ru/}{{ITMO University}}}
+{ITMO University}
 {Remote}
 {Master's degree, Highload Systems Software}
 {Sept. 2024 - Present}
 
 \resumeSubheading
-{\href{https://en.itmo.ru/}{{ITMO University}}}
+{ITMO University}
 {Saint-Petersburg, Russia}
 {Bachelor's degree, Software Engineering}
 {Sept. 2020 - July 2024}
 
 \resumeSubHeadingListEnd
 
-\section{Projects}
-\resumeSubHeadingListStart
+% \section{Projects}
+% \resumeSubHeadingListStart
 
-\resumeProjSubheading
-{\href{https://github.com/fadyat/i4u}{i4u}}{}
-{\skill{Go} \skill{OpenAI} \skill{Gmail}}{}
-\resumeDesc{
-\begin{itemize}
-\item Internship for you is a lightweight and efficient solution designed to streamline the management of internship requests.
-\item Automates reading, identifying, summarizing, and forwarding internship-related emails.
-\item Design employs the principles of concurrency by utilizing goroutines, channels, and wait groups.
-\end{itemize}
-}
+% \resumeProjSubheading
+% {\href{https://github.com/fadyat/i4u}{i4u}}{}
+% {\skill{Go} \skill{OpenAI} \skill{Gmail}}{}
+% \resumeDesc{
+% \begin{itemize}
+    % \item Lightweight that automates reading, summarizing, and forwarding internship-related emails using OpenAI and Gmail APIs.
+    % \item Designed with concurrency in mind via goroutines, channels, and wait groups.
+% \end{itemize}
+% }
 
 %\resumeProjSubheading
 %{\href{https://github.com/fadyat/segments}{segments}}{}
@@ -268,32 +281,64 @@ $\cdot$ Saint-Petersburg, Russia
 %It was developed using Roslyn analyzer and abstract syntax tree parsing.
 %}
 
-\resumeSubHeadingListEnd
+% \resumeSubHeadingListEnd
 
 \section{Achievements}
 \resumeSubHeadingListStart
 
 \resumeProjSubheading
-{{\href{http://github.com/fadyat}{Community Contributions}}}{}
-{\skill{FerretDB} \skill{Mentoring}}
-{Sept. 2023 - Present}
+{Yandex Contributions}{}
+{\skill{C\plus\plus} \skill{Go} \skill{LSP}}
+{June 2023 - Present}
 \resumeDesc{
 \begin{itemize}
-\item Enhanced \href{https://github.com/FerretDB/FerretDB/pulls?q=is:pr+author:fadyat+is:closed}{FerretDB} by implementing nested index creation in the SQLite driver, benefiting thousands of developers.
-\item Mentored 40\plus \space students in the \href{https://education.vk.company/centrums}{VK course}, completing 200\plus \space code reviews and boosting project completion rates and code quality.
+    \item
+        Co-developed LSP features (declaration lookup, usage search) at \href{https://sourcecraft.dev/}{SourceCraft},
+        introducing incremental caching for performance.
+    \item
+        Benchmarked multiple C\plus\plus{} hashtable implementations in aggregation workloads
+        as part of the \href{https://ydb.tech/}{YDB} project, providing performance insights for future decisions.
+    \item
+        Ranked top 2 out of 46 students in the \href{https://yandex.ru/yaintern/schools/summer}{Yandex School of Backend Development},
+        while collaborating in an 11-member team to build a platform allocating 100\plus{} students to projects based on their preferences.
 \end{itemize}
 }
 
 \resumeProjSubheading
-{{\href{https://yandex.ru/yaintern/schools/summer}{Yandex School of Backend Development}}}{}
-{\skill{Go} \skill{PostgreSQL} \skill{gRPC}}
-{June 2023 - Aug 2023}
+{Community Contributions}{}
+{\skill{FerretDB} \skill{Mentoring}}
+{Sept. 2023 - Present}
 \resumeDesc{
 \begin{itemize}
-\item Collaborated in an 11-member team to build a platform that allocated 100\plus \space students to projects based on their preferences.
-\item Led the development of RBAC for 5\plus \space user roles and optimized database architecture, improving query performance by 30\%.
+    \item
+        Enhanced \href{https://github.com/FerretDB/FerretDB/pulls?q=is:pr+author:fadyat+is:closed}{FerretDB} by implementing
+        nested index creation in the SQLite driver, benefiting thousands of developers.
+    \item
+        Mentored 40\plus \space students in the \href{https://education.vk.company/centrums}{VK course}, completing 200\plus \space
+        code reviews and boosting project completion rates and code quality.
 \end{itemize}
 }
+
+\resumeProjSubheading
+{School Olympiads}{}
+{\skill{Competitive programming} \skill{Mathematics}}
+{Feb. 2020}
+\resumeDesc{
+\begin{itemize}
+    \item
+        Prize-winner of the All-Russian Olympiad in Mathematics (MIPT), awarded full tuition at university.
+    \item
+        Prize-winner of the regional stage of the All-Russian School Olympiad in Programming.
+\end{itemize}
+}
+
+%\resumeProjSubheading
+%{{Russian National Olympiad in Informatics}}{}
+%{\skill{C++} \skill{Competitive programming}}
+%{Jan. 2020}
+%\resumeDesc{Became the prize winner of the regional stage, in 3 months without
+%knowledge of programming languages and algorithms}
+
 
 %\resumeProjSubheading
 %{{\href{https://education.vk.company/students}{VK Advanced Python}}}{}
@@ -333,7 +378,7 @@ $\cdot$ Saint-Petersburg, Russia
 \resumeSubHeadingListStart
 \item{
 \small{
-\textbf{Technologies}{: Kubernetes, Docker, SQL, Linux, PostgreSQL, MongoDB, Redis, Redpanda }
+\textbf{Technologies}{: Kubernetes, Docker, SQL, Linux, PostgreSQL, MongoDB, Redis, Kafka }
 }
 }
 \vspace{-7pt}
@@ -354,7 +399,6 @@ $\cdot$ Saint-Petersburg, Russia
 \textbf{Languages}{: English -- Advanced, Russian -- Native}
 }
 }
-
 
 \resumeSubHeadingListEnd
 
