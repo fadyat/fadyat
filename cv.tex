@@ -1,8 +1,6 @@
 \documentclass[letterpaper,10pt]{article}
 
 \usepackage{makecell}
-\usepackage[link=off]{phonenumbers}
-
 \usepackage{fontawesome5}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -13,6 +11,12 @@
 \usepackage{enumitem}
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{fancybox}
+\usepackage{lmodern}
+\usepackage{tikz}
+\usepackage{multirow}
+\usepackage{changepage}
 
 
 \pagestyle{fancy}
@@ -29,7 +33,6 @@
 \addtolength{\textheight}{0.0in}
 
 \urlstyle{same}
-
 \hypersetup{
     colorlinks=true,
     linkcolor=blue!50!red,
@@ -48,128 +51,93 @@
 
 %-------------------------
 % Custom commands
-\def \ifempty#1{\def\temp{#1} \ifx
-                                  \temp\empty }
-
-\newcommand{\resumeItem}[2]{
-\item\small{
-\ifempty{#1}#2\else\textbf{#1}{: #2 \vspace{-2pt}}\fi
-}
-}
-
 \newcommand{\plus}{\raisebox{.4\height}{\scalebox{.6}{+}}}
-
-\usepackage[dvipsnames]{xcolor}
 \definecolor{mygray}{gray}{0}
-\usepackage{fancybox}
 
-\usepackage{lmodern}
-\usepackage{tikz}
-
-% Style definition
 \tikzset{rndblock/.style={rounded corners,rectangle,draw,outer sep=0pt}}
-
-% Command Definition
-% 1 optional to customize the aspect, 2 mandatory: text to be framed
 \newcommand{\tframed}[2][]{\tikz[baseline=(h.base)]\node[rndblock,#1] (h) {\color{black}{#2}};}
-
 \newcommand*{\mystrut}{\rule[-0.2\baselineskip]{0pt}{0.8\baselineskip}}
 \newcommand{\skill}[1]{\tframed[lightgray]{\mystrut#1}}
 
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 
 \newcommand{\resumeSubheading}[4]{
 \vspace{-1pt}\item
-\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-\textbf{#1}       & \textcolor{mygray}{#2}                 \\
-\textit{\small#3} & \textcolor{mygray}{\textit{\small #4}} \\
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}c}
+\textbf{#1}       & \multirow{2}{*}{\textcolor{mygray}{\textit{\small #4}}} \\
+\textit{\small#3} &                                         \\
 \end{tabular*}\vspace{-5pt}
+\textcolor{mygray}{\textit{\small #2}}
 }
 
 \newcommand{\resumeExpSubheading}[5]{
 \vspace{-1pt}\item
-\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-\textbf{#1}       & \textcolor{mygray}{#2}                 \\
-\textit{\small#3} & \textcolor{mygray}{\textit{\small #4}} \\
-{\scriptsize#5}
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}c}
+\textbf{#1}       & \multirow{3}{*}{\textcolor{mygray}{\textit{\small #4}}} \\
+\textit{\small#3} &                                         \\
+{\scriptsize#5}   &                                         \\
 \end{tabular*}\vspace{4pt}
+\textcolor{mygray}{\textit{\small #2}}
 }
 
 \newcommand{\resumeProjSubheading}[4]{
 \vspace{-1pt}\item
-\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-\textbf{#1}      & \textcolor{mygray}{#2}                 \\
-\scriptsize {#3} & \textcolor{mygray}{\textit{\small #4}} \\
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}c}
+\textbf{#1}      & \multirow{2}{*}{\textcolor{mygray}{\textit{\small #4}}} \\
+\scriptsize {#3} &                                         \\
 \end{tabular*}\vspace{4pt}
+\textcolor{mygray}{#2}
 }
-
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-\usepackage{changepage}
 \newcommand{\resumeDesc}[1]{\begin{adjustwidth}{5pt}{0pt}\vspace{-2pt}{\small{#1}}\end{adjustwidth}}
-
+\newcommand{\mysim}{{\mathbf{\small \sim}}}
 
 \begin{document}
 
-\vfill\noindent
-\begin{tabular}[t]{@{
-\vspace{0.5ex}
-}l}
+\begin{center}
+    \textbf{\LARGE Artyom Fadeyev} \\[0.8em]
 
-\textbf{\large{Artyom Fadeyev}} \\
-\href{tel:+79210600505}{\color{black} \plus7 921 060 05 05}
-$\cdot$ Saint-Petersburg, Russia
-
-\end{tabular}
-\hfill % move it to the right
-\begin{tabular}[t]{@{}r@{}}
-\href{mailto:fadyat@icloud.com}{\color{black} fadyat@icloud.com} \\
-
-\href{https://github.com/fadyat}{\color{black} \faGithub}
-
-\href{https://www.linkedin.com/in/fadyat/}{\color{black} \faLinkedin}
-
-\href{https://t.me/not_fadyat}{\color{black} \faTelegram}
-\end{tabular}
-\vspace{1ex}
+    {\small
+    \faEnvelope\ \href{mailto:fadyat@icloud.com}{\color{black} fadyat@icloud.com} $\cdot$
+    \faLinkedin\ \href{https://www.linkedin.com/in/fadyat/}{\color{black} fadyat} $\cdot$
+    \faGithub\ \href{https://github.com/fadyat}{\color{black} fadyat} $\cdot$
+    \faTelegram\ \href{https://t.me/fadyat}{\color{black} fadyat} $\cdot$
+    \faPhone\ \href{tel:+79210600505}{\color{black} \plus 79210600505}
+    }
+\end{center}
 
 \section{Experience}
 \resumeSubHeadingListStart
 
 \resumeExpSubheading
-{Avito}{Remote}
+{Avito}
+{}
 {Software Engineer, DBaaS}
 {Oct. 2023 - Present}
 {\skill{Go} \skill{Kubernetes} \skill{S3} \skill{Python}}
 \resumeDesc{
 \begin{itemize}
     \item
-        Led the development of a backup verification platform that verifies all backups across the entire company,
-        ensuring the integrity of ${\small \sim} 10$k backups daily across multiple storage systems.
+        Led the development of a backup verification platform that \textbf{verifies all backups across the entire company},
+        ensuring the integrity of \textbf{$\mysim$10k backups daily} across multiple storage systems.
     \item
         Delivered isolated bucket environments for object storage, providing separate infrastructure for large teams;
-        supports projected growth of ${\small \sim} 1$k users and ${\small \sim} 80$k buckets.
+        supports projected \textbf{growth of $\mysim$1k users and $\mysim$80k buckets}.
     \item
         Engineered a verification scheduling algorithm considering database sizes, with additional optimizations,
-        delivering 2x faster verifications and 20–30\% lower Ceph load.
+        delivering \textbf{2x faster verifications} and \textbf{20–30\% lower Ceph load.}
     \item
         Implemented a volume expansion mechanism using the Kubernetes Controller and CSI driver,
-        reducing expansion time by 90\% and significantly enhancing system reliability.
-
-%     % \item Optimized architecture by adopting multiple microservices-related patterns, improving system-wide consistency and fault tolerance.
-%     % \item Onboarded new engineers and conducted training sessions on the project's architecture and core technologies of the team.
-
+        \textbf{reducing expansion time by 90\%} and significantly enhancing system reliability.
 \end{itemize}
 }
 
 \resumeExpSubheading
-{Tinkoff}{Saint-Petersburg, Russia}
+{Tinkoff}
+{}
 {Site Reliability Engineer - Intern, DWH Ingest}
 {March 2023 - June 2023}
 {\skill{Java} \skill{Kubernetes} \skill{Gitlab CI} \skill{Grafana} \skill{Prometheus} \skill{Kafka}}
@@ -182,13 +150,14 @@ $\cdot$ Saint-Petersburg, Russia
 \end{itemize}}
 
 \resumeExpSubheading
-{Playrix}{Vologda, Russia}
+{Playrix}
+{}
 {Software Engineer - Intern, Automation Team}
 {July 2022 - Sept. 2022}
 {\skill{Python} \skill{AWS} \skill{Vault} \skill{Consul}}
 \resumeDesc{
 \begin{itemize}
-    \item Developed a solution for tracking employee birthdays and length of service for ${\small \sim} 4$k employees, with delayed notifications.
+    \item Developed a solution for tracking employee birthdays and length of service for \textbf{$\mysim$4k employees}, with delayed notifications.
     \item Led the transition from a monolithic to a microservices architecture, introducing asynchronous code and utilizing AWS Kinesis.
     \item Deployed services using Docker and Nomad orchestrator with storing secrets in Vault and configurations in Consul.
 \end{itemize}}
@@ -199,95 +168,24 @@ $\cdot$ Saint-Petersburg, Russia
 \resumeSubHeadingListStart
 \resumeSubheading
 {ITMO University}
-{Remote}
+{}
 {Master's degree, Highload Systems Software}
 {Sept. 2024 - Present}
 
 \resumeSubheading
 {ITMO University}
-{Saint-Petersburg, Russia}
+{}
 {Bachelor's degree, Software Engineering}
 {Sept. 2020 - July 2024}
 
 \resumeSubHeadingListEnd
 
-% \section{Projects}
-% \resumeSubHeadingListStart
-
-% \resumeProjSubheading
-% {\href{https://github.com/fadyat/i4u}{i4u}}{}
-% {\skill{Go} \skill{OpenAI} \skill{Gmail}}{}
-% \resumeDesc{
-% \begin{itemize}
-    % \item Lightweight that automates reading, summarizing, and forwarding internship-related emails using OpenAI and Gmail APIs.
-    % \item Designed with concurrency in mind via goroutines, channels, and wait groups.
-% \end{itemize}
-% }
-
-%\resumeProjSubheading
-%{\href{https://github.com/fadyat/segments}{segments}}{}
-%{\skill{Go} \skill{PostgreSQL} \skill{Swagger} \skill{Docker}}{Aug. 2023 - Sept. 2023}
-%\resumeDesc{
-%\begin{itemize}
-%\item Developed a backend service for dynamic user segmentation, enabling flexible experimentation and targeted user grouping.
-%\item Implemented real-time history tracking, allowing precise monitoring of user segment membership changes.
-%\item Introduced time-based membership management, allowing control over user segment membership durations.
-%\item Engineered an automated user distribution feature, simplifying segmentation and testing through predefined percentages.
-%\end{itemize}
-%}
-
-%\resumeProjSubheading
-%{\href{https://github.com/fadyat/hooks}{hooks}}{}
-%{\skill{Go} \skill{Docker} \skill{Gitlab} \skill{Asana}}{Feb. 2023 - June 2023}
-%\resumeDesc{
-%\begin{itemize}
-%\item Hooks streamlines workflows by integrating GitLab with Asana, automating task tracking and commits.
-%\item Utilizes GitLab webhooks for real-time synchronization of tasks with the latest commits, ensuring project accuracy.
-%\item Asana tasks are pinned to GitLab merge request descriptions, providing comprehensive project monitoring.
-%\item Achieves fully automated build and publishing to the Docker registry for a smooth development process.
-%\end{itemize}
-%}
-
-%\resumeProjSubheading
-%{\href{https://github.com/fadyat/cloud}{Cloud programming with Go}}{}
-%{\skill{Go} \skill{MongoDB} \skill{Docker}}{Oct. 2022 - Dec. 2022}
-%\resumeDesc{
-%Covered the software architectural patterns of cloud applications and practical concepts regarding how to scale, distribute, and deploy those applications.
-%}
-
-%\resumeProjSubheading
-%{\href{https://github.com/fadyat/asana-tools}{Asana tools}}{}
-%{\skill{Python} \skill{React} \skill{OAuth2} \skill{Docker}}{September 2022}
-%\resumeDesc{
-%A service that will help you automate the work with tasks in Asana.
-%Allows you to create a task based on the submitted template, and also allows you to create a report
-%that allows you to set approvals and rejections for contractor tasks for
-%a certain period of work.
-%}
-
-%\resumeProjSubheading
-%{\href{https://github.com/ITMO-TECH-TEAM-3/TEAM-3-1}{Sports events}}{}
-%{\skill{Java} \skill{Spring} \skill{Python} \skill{Freemarker}}{May 2022}
-%\resumeDesc{Learned the Java and Spring framework. Implemented all the basic structure and internal code logic
-%(endpoints, authorization, deployment) of a service that can serve users, collaborated with 3 teams of 3 students each.
-%\\ Partly played the role of team leader. Constantly created new tasks and discussed them with the team.}
-
-%\resumeProjSubheading
-%{\href{https://github.com/fadyat/ITMO-PROBLEMS/tree/master/Programming-Technologies/IV\%20semester}{Code fixer and analyzer}}{}
-%{\skill{C\#} \skill{Roslyn} \skill{LINQ}}{March 2022}
-%\resumeDesc{
-%The analyzer finds the if statement and displays a warning that you can invert it. Upon acceptance, the code fixer
-%inverts the operator. There is also the detection of private fields that are used as local.
-%It was developed using Roslyn analyzer and abstract syntax tree parsing.
-%}
-
-% \resumeSubHeadingListEnd
-
 \section{Achievements}
 \resumeSubHeadingListStart
 
 \resumeProjSubheading
-{Yandex Contributions}{}
+{Yandex Contributions}
+{}
 {\skill{C\plus\plus} \skill{Go} \skill{LSP}}
 {June 2023 - Present}
 \resumeDesc{
@@ -299,13 +197,14 @@ $\cdot$ Saint-Petersburg, Russia
         Benchmarked multiple C\plus\plus{} hashtable implementations in aggregation workloads
         as part of the \href{https://ydb.tech/}{YDB} project, providing performance insights for future decisions.
     \item
-        Ranked top 2 out of 46 students in the \href{https://yandex.ru/yaintern/schools/summer}{Yandex School of Backend Development},
-        while collaborating in an 11-member team to build a platform allocating 100\plus{} students to projects based on their preferences.
+        Ranked \textbf{top 2 out of 46} students in the \href{https://yandex.ru/yaintern/schools/summer}{Yandex School of Backend Development},
+        while collaborating in an 11-member team to build a platform \textbf{allocating 100\plus{} students} to projects based on their preferences.
 \end{itemize}
 }
 
 \resumeProjSubheading
-{Community Contributions}{}
+{Community Contributions}
+{}
 {\skill{FerretDB} \skill{Mentoring}}
 {Sept. 2023 - Present}
 \resumeDesc{
@@ -314,91 +213,44 @@ $\cdot$ Saint-Petersburg, Russia
         Enhanced \href{https://github.com/FerretDB/FerretDB/pulls?q=is:pr+author:fadyat+is:closed}{FerretDB} by implementing
         nested index creation in the SQLite driver, benefiting thousands of developers.
     \item
-        Mentored 40\plus \space students in the \href{https://education.vk.company/centrums}{VK course}, completing 200\plus \space
-        code reviews and boosting project completion rates and code quality.
+        Mentored \textbf{40\plus{} students} in the \href{https://education.vk.company/centrums}{VK course}, completing \textbf{500\plus{} code reviews} and boosting project completion rates and code quality.
 \end{itemize}
 }
 
 \resumeProjSubheading
-{School Olympiads}{}
+{School Olympiads}
+{}
 {\skill{Competitive programming} \skill{Mathematics}}
 {Feb. 2020}
 \resumeDesc{
 \begin{itemize}
     \item
-        Prize-winner of the All-Russian Olympiad in Mathematics (MIPT), awarded full tuition at university.
+        Prize-winner of the National Mathematics Olympiad (MIPT), awarded a \textbf{full tuition} waiver at university.
     \item
-        Prize-winner of the regional stage of the All-Russian School Olympiad in Programming.
+        Prize-winner of the regional round of the National School Olympiad in Programming.
 \end{itemize}
 }
-
-%\resumeProjSubheading
-%{{Russian National Olympiad in Informatics}}{}
-%{\skill{C++} \skill{Competitive programming}}
-%{Jan. 2020}
-%\resumeDesc{Became the prize winner of the regional stage, in 3 months without
-%knowledge of programming languages and algorithms}
-
-
-%\resumeProjSubheading
-%{{\href{https://education.vk.company/students}{VK Advanced Python}}}{}
-%{\skill{Python} \skill{C}}
-%{March - May 2023}
-%\resumeDesc{
-%\begin{itemize}
-%\item Acquired expertise in advanced Python concepts, including asynchronous programming, C extensions, and metaclasses.
-%\item Developed a C extension enabling seamless integration with a C library for JSON manipulation.
-%\end{itemize}
-%}
-
-%\resumeProjSubheading
-%{{\href{https://github.com/Hacktoberfest}{GitHub Hacktoberfest}}}{}
-%{\skill{Opensource} \skill{Git}}
-%{Oct. 2021}
-%\resumeDesc{Contributed to an open source in time of the Hacktoberfest event and take a prize.
-%}
-
-%\resumeProjSubheading
-%{{Phystech olympiad of mathematics}}{}
-%{\skill{Mathematics}}
-%{Febr. 2020}
-%\resumeDesc{Prize-Winner of the All-Russian Olympiad, organized by the MIPT, which allows you to enter a university without exams
-%}
-
-%\resumeProjSubheading
-%{{Russian National Olympiad in Informatics}}{}
-%{\skill{C++} \skill{Competitive programming}}
-%{Jan. 2020}
-%\resumeDesc{Became the prize winner of the regional stage, in 3 months without
-%knowledge of programming languages and algorithms}
 
 \resumeSubHeadingListEnd
 
 \section{Skills}
 \resumeSubHeadingListStart
+
 \item{
-\small{
-\textbf{Technologies}{: Kubernetes, Docker, SQL, Linux, PostgreSQL, MongoDB, Redis, Kafka }
-}
+    \small{\textbf{Technologies}: Kubernetes, Docker, Linux, PostgreSQL, MongoDB, Redis, Kafka}
 }
 \vspace{-7pt}
 \item{
-\small{
-\textbf{Interests}{: Databases, Highload, Concurrency, Distributed Systems, Platforms }
-}
+    \small{\textbf{Interests}: HFT, Databases, Distributed Systems, FP, Concurrency, Optimizations}
 }
 \vspace{-7pt}
 \item{
-\small{
-\textbf{Programming Languages}{: Go, Python, Rust }
+    \small{\textbf{Programming Languages}: Go, Rust, Python}
 }
-}
-\vspace{-7pt}
-\item{
-\small{
-\textbf{Languages}{: English -- Advanced, Russian -- Native}
-}
-}
+% \vspace{-7pt}
+% \item{
+    % \small{\textbf{Languages}: English -- Upper-intermediate, Russian -- Native}
+% }
 
 \resumeSubHeadingListEnd
 
