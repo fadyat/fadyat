@@ -144,9 +144,9 @@
 \resumeDesc{
 \begin{itemize}
     \item Set up a project CI/CD pipeline using Gitlab CI and deploy it to a Kubernetes cluster using Helm.
-    \item Implemented Prometheus and Grafana-based alert systems to notify duty engineers about service issues promptly.
-    \item Changed usage of the GitLab artifacts to the Artifactory registry with fully automated building, publishing, and deployment.
-    \item Jointly implemented transferring a Kafka topic from one cluster to another using the Java and Schema Registry.
+    \item Refactored Prometheus/Grafana alerts, \textbf{reducing false positives by $\mysim$30\%} and improving on-call response time.
+    \item Migrated builds to Artifactory with JAR caching, \textbf{speeding up repeat builds by 35–40\%}.
+    \item Co-engineered a solution for \textbf{zero-downtime} Kafka topic migration across clusters utilizing Java and Schema Registry.
 \end{itemize}}
 
 \resumeExpSubheading
