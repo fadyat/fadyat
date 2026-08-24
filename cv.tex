@@ -81,6 +81,15 @@
 \textcolor{mygray}{\textit{\small #2}}
 }
 
+\newcommand{\resumeEduSubheading}[4]{
+\vspace{-1pt}\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}c}
+\textbf{#1}         & \multirow{3}{*}{\textcolor{mygray}{\textit{\small #3}}} \\
+\textit{\small#2}   &                                         \\
+{\small\textit{#4}} &                                         \\
+\end{tabular*}\vspace{-5pt}
+}
+
 \newcommand{\resumeProjSubheading}[4]{
 \vspace{-1pt}\item
 \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}c}
@@ -101,7 +110,7 @@
     \textbf{\LARGE Artyom Fadeyev} \\[0.8em]
 
     {\small
-    \faEnvelope\ \href{mailto:fadyat@icloud.com}{\color{black} fadyat@icloud.com} $\cdot$
+    \faEnvelope\ \href{mailto:fadyat.dev@gmail.com}{\color{black} fadyat.dev@gmail.com} $\cdot$
     \faLinkedin\ \href{https://www.linkedin.com/in/fadyat/}{\color{black} fadyat} $\cdot$
     \faGithub\ \href{https://github.com/fadyat}{\color{black} fadyat} $\cdot$
     \faTelegram\ \href{https://t.me/fadyat}{\color{black} fadyat} $\cdot$
@@ -115,23 +124,32 @@
 \resumeExpSubheading
 {Avito}
 {}
-{Software Engineer, DBaaS}
+{Software Engineer, STaaS}
 {Oct. 2023 - Present}
 {\skill{Go} \skill{Kubernetes} \skill{S3} \skill{Python}}
 \resumeDesc{
 \begin{itemize}
     \item
-        Led the development of a backup verification platform that \textbf{verifies all backups across the entire company},
-        ensuring the integrity of \textbf{$\mysim$10k backups daily} across multiple storage systems.
+        Launched isolated S3 environments as an autonomous service: independent service discovery and secret storage,
+        availability even when cut off from the rest of the platform, serving \textbf{2.7k\plus{} buckets for 48 teams}.
     \item
-        Delivered isolated bucket environments for object storage, providing separate infrastructure for large teams;
-        supports projected \textbf{growth of $\mysim$1k users and $\mysim$80k buckets}.
+        Built zero-downtime S3 bucket migration across \textbf{dozens of clusters} of a \textbf{petabyte-scale} platform:
+        a custom migrator with distributed locks
+        and a fully S3-compatible proxy sustaining \textbf{15k RPS} with under \textbf{20 ms} added latency during live migrations.
     \item
-        Engineered a verification scheduling algorithm considering database sizes, with additional optimizations,
-        delivering \textbf{2x faster verifications} and \textbf{20–30\% lower Ceph load.}
+        Initiated and feature-led the design of a cold storage tier for archiving \textbf{petabytes} of backups
+        with consistency verification for sharded databases, landing it on the platform's annual roadmap.
     \item
-        Implemented a volume expansion mechanism using the Kubernetes Controller and CSI driver,
-        \textbf{reducing expansion time by 90\%} and significantly enhancing system reliability.
+        Integrated LLM tooling into daily work: \textbf{1.9x} the team's average velocity and \textbf{top-1 in AI adoption} in the unit.
+    \item
+        Led the development of a backup verification platform that \textbf{verifies all backups across the entire company}:
+        \textbf{10k\plus{} backups daily} across multiple storage systems, up from monthly checks.
+    \item
+        Engineered a verification scheduling algorithm accounting for database size, priority, and cluster load,
+        delivering \textbf{2--3x faster verifications} (from 5h to 2h for 11 TB) and \textbf{20\%\plus{} lower peak Ceph load}.
+    \item
+        Implemented automated volume expansion via the Kubernetes Controller and CSI driver,
+        \textbf{reducing expansion time by 90\%}.
 \end{itemize}
 }
 
@@ -140,13 +158,11 @@
 {}
 {Site Reliability Engineer - Intern, DWH Ingest}
 {March 2023 - June 2023}
-{\skill{Java} \skill{Kubernetes} \skill{Gitlab CI} \skill{Grafana} \skill{Prometheus} \skill{Kafka}}
+{\skill{Java} \skill{Kubernetes} \skill{Kafka}}
 \resumeDesc{
 \begin{itemize}
-    \item Set up a project CI/CD pipeline using Gitlab CI and deploy it to a Kubernetes cluster using Helm.
-    \item Refactored Prometheus/Grafana alerts, \textbf{reducing false positives by $\mysim$30\%} and improving on-call response time.
-    \item Migrated builds to Artifactory with JAR caching, \textbf{speeding up repeat builds by 35–40\%}.
-    \item Co-engineered a solution for \textbf{zero-downtime} Kafka topic migration across clusters utilizing Java and Schema Registry.
+    \item Co-engineered a solution for \textbf{zero-downtime} migration of \textbf{hundreds of} Kafka topics across clusters utilizing Schema Registry.
+    \item Migrated builds to Artifactory with JAR caching, \textbf{speeding up repeat builds by 35--40\%}.
 \end{itemize}}
 
 \resumeExpSubheading
@@ -157,26 +173,25 @@
 {\skill{Python} \skill{AWS} \skill{Vault} \skill{Consul}}
 \resumeDesc{
 \begin{itemize}
-    \item Developed a solution for tracking employee birthdays and length of service for \textbf{$\mysim$4k employees}, with delayed notifications.
-    \item Led the transition from a monolithic to a microservices architecture, introducing asynchronous code and utilizing AWS Kinesis.
-    \item Deployed services using Docker and Nomad orchestrator with storing secrets in Vault and configurations in Consul.
+    \item Led the transition of internal automation serving \textbf{$\mysim$4k employees} from a monolith to microservices.
 \end{itemize}}
 
 \resumeSubHeadingListEnd
 
 \section{Education}
 \resumeSubHeadingListStart
-\resumeSubheading
+\resumeEduSubheading
 {ITMO University}
-{}
 {Master's degree, Highload Systems Software}
-{Sept. 2024 - Present}
+{Sept. 2024 - June 2026}
+{Thesis: Zero-downtime S3 bucket migration across clusters
+(\href{https://www.ipkn.itmo.ru/news/luchshie-vkr-2026-yandex}{among the program's best theses})}
 
-\resumeSubheading
+\resumeEduSubheading
 {ITMO University}
-{}
 {Bachelor's degree, Software Engineering}
 {Sept. 2020 - July 2024}
+{Thesis: Automated backup verification platform}
 
 \resumeSubHeadingListEnd
 
@@ -187,7 +202,7 @@
 {Yandex Contributions}
 {}
 {\skill{C\plus\plus} \skill{Go} \skill{LSP}}
-{June 2023 - Present}
+{2023 - 2025}
 \resumeDesc{
 \begin{itemize}
     \item
@@ -195,7 +210,7 @@
         introducing incremental caching for performance.
     \item
         Benchmarked multiple C\plus\plus{} hashtable implementations in aggregation workloads
-        as part of the \href{https://ydb.tech/}{YDB} project, providing performance insights for future decisions.
+        for the \href{https://ydb.tech/}{YDB} query engine.
     \item
         Ranked \textbf{top 2 out of 46} students in the \href{https://yandex.ru/yaintern/schools/summer}{Yandex School of Backend Development},
         while collaborating in an 11-member team to build a platform \textbf{allocating 100\plus{} students} to projects based on their preferences.
@@ -206,14 +221,15 @@
 {Community Contributions}
 {}
 {\skill{FerretDB} \skill{Mentoring}}
-{Sept. 2023 - Present}
+{2023 - 2025}
 \resumeDesc{
 \begin{itemize}
     \item
-        Enhanced \href{https://github.com/FerretDB/FerretDB/pulls?q=is:pr+author:fadyat+is:closed}{FerretDB} by implementing
-        nested index creation in the SQLite driver, benefiting thousands of developers.
+        Implemented nested-field index creation in
+        \href{https://github.com/FerretDB/FerretDB/pulls?q=is:pr+author:fadyat+is:closed}{FerretDB}'s SQLite driver,
+        merged upstream.
     \item
-        Mentored \textbf{40\plus{} students} in the \href{https://education.vk.company/centrums}{VK course}, completing \textbf{500\plus{} code reviews} and boosting project completion rates and code quality.
+        Mentored \textbf{40\plus{} students} in the \href{https://education.vk.company/centrums}{VK course}, completing \textbf{500\plus{} code reviews}.
 \end{itemize}
 }
 
@@ -221,7 +237,7 @@
 {School Olympiads}
 {}
 {\skill{Competitive programming} \skill{Mathematics}}
-{Feb. 2020}
+{2020}
 \resumeDesc{
 \begin{itemize}
     \item
@@ -237,11 +253,11 @@
 \resumeSubHeadingListStart
 
 \item{
-    \small{\textbf{Technologies}: Kubernetes, Docker, Linux, PostgreSQL, MongoDB, Redis, Kafka}
+    \small{\textbf{Technologies}: Kubernetes, Docker, Linux, Ceph, PostgreSQL, MongoDB, Redis, Kafka, Consul, Vault}
 }
 \vspace{-7pt}
 \item{
-    \small{\textbf{Interests}: HFT, Databases, Distributed Systems, FP, Concurrency, Optimizations}
+    \small{\textbf{Interests}: HFT, Databases, Distributed Systems, FP, Concurrency, Optimizations, AI}
 }
 \vspace{-7pt}
 \item{
